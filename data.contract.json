@@ -1,0 +1,41 @@
+{
+  "version": "1.4.2-phase5",
+  "primary_key": "content_id",
+  "production_routes": ["即梦路线", "纯代码路线"],
+  "content_formats": ["图文", "短视频", "长视频", "Idea Pin"],
+  "rules": [
+    "内容形式不是生产路线",
+    "账号状态不是生产路线",
+    "未人工定稿不得创建生产工单",
+    "工作台不执行图片或视频生成",
+    "外部成片未验收不得进入待发布或已发布",
+    "每个外部交付版本都必须保留独立验收结论",
+    "已验收生产工单不可回退",
+    "发布数据仅能写入已发布内容",
+    "复盘快照仅允许 T+1、T+7、T+30",
+    "每次发布状态变化保留独立历史记录",
+    "每个指标快照必须保存真实来源和来源日期",
+    "建议缺少来源、样本、基准或数字时不可采纳",
+    "运营数据只能调整执行和内容组合，不得自动替换策略",
+    "所有修改必须绑定原型中已明确的参与人员，不推导角色层级",
+    "关键修改与数据导出必须写入不可省略的审计记录"
+    ,"素材登记必须在外部链接与本地上传之间二选一"
+    ,"本地上传只保存外部生产结果，不触发任何图片或视频生成"
+  ],
+  "entities": {
+    "Participant": ["id", "name", "active"],
+    "AuditLog": ["id", "actorId", "actorName", "action", "entityType", "entityId", "summary", "occurredAt"],
+    "Account": ["id", "platform", "accountName", "region", "status", "owner", "capability", "notes", "lastCheckedAt"],
+    "ActionTask": ["id", "sortOrder", "title", "description", "owner", "dueDate", "priority", "status", "deletedAt", "deletedBy"],
+    "Idea": ["topic", "source", "problem", "value", "targetPlatforms", "validationVariable", "card", "status"],
+    "PlatformVersion": ["contentId", "platform", "format", "ratio", "duration", "title", "body", "tags", "cta", "language", "coverRequirement", "expression", "status"],
+    "Review": ["contentId", "platformVersionId", "platform", "version", "reviewer", "script", "storyboard", "subtitles", "coverCopy", "status", "approvedAt"],
+    "ProductionTask": ["contentId", "title", "reviewVersion", "route", "owner", "ratio", "dueDate", "checklist", "status"],
+    "Asset": ["id", "contentId", "type", "version", "storageMode", "fileName", "fileSize", "mimeType", "storedPath", "url", "acceptanceStatus"],
+    "Delivery": ["contentId", "version", "route", "assetId", "fileUrl", "acceptanceStatus", "notes", "reviewNotes", "reviewedBy", "reviewedAt"],
+    "Publication": ["id", "contentId", "platform", "plannedOrActualDate", "status", "platformUrl", "blocker", "recordedAt"],
+    "MetricSnapshot": ["id", "contentId", "platform", "snapshot", "sourceName", "sourceDate", "impressions", "views", "watchRate", "engagements", "clicks", "importedAt"],
+    "ImportBatch": ["id", "sourceName", "sourceDate", "rowCount", "matched", "importedAt"],
+    "Insight": ["id", "semanticLevel", "conclusion", "source", "sampleContentIds", "sampleSize", "baseline", "numbers", "suggestedAction", "validationVariable", "status"]
+  }
+}

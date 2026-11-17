@@ -1,0 +1,14 @@
+{
+  "project_id": "royal-zen-social-agent-workbench",
+  "version": "1.4.2-phase5",
+  "workspace_root": ".",
+  "data_contract": "data.contract.json",
+  "workspace_policy": "workspace.policy.json",
+  "workspace_index": "workspace.index.json",
+  "workflow": "workflows/mvp-workflow.json",
+  "runtime": {
+    "entry": "server.js",
+    "data_store": "data/store.json",
+    "seed": "data/seed.json"
+  }
+}

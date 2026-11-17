@@ -1,0 +1,15 @@
+{
+  "version": "1.4.2-phase5",
+  "sources": {
+    "prototype": "index.html",
+    "development_plan": "docs/开发方案_社媒Agent工作台.html",
+    "seed_data": "data/seed.json"
+  },
+  "runtime_artifacts": {
+    "store": "data/store.json",
+    "local_assets": "data/uploads/"
+  },
+  "presentation": {
+    "workbench": "http://127.0.0.1:8899"
+  }
+}

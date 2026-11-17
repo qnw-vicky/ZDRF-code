@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Runtime data and uploaded assets
+data/store.json
+data/uploads/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Test and build output
+coverage/
+dist/
+build/
+*.log
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+

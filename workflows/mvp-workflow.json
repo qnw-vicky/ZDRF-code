@@ -1,0 +1,19 @@
+{
+  "workflow_id": "social-content-mvp",
+  "version": "1.4.2",
+  "nodes": [
+    {"id": "operator_trace", "level": "L6", "output": "Participant", "gate": true},
+    {"id": "audit_trail", "level": "L6", "output": "AuditLog"},
+    {"id": "account_readiness", "level": "L0", "output": "Account"},
+    {"id": "action_queue", "level": "L6", "output": "ActionTask"},
+    {"id": "idea", "level": "L4", "output": "Idea"},
+    {"id": "platform_design", "level": "L6", "output": "PlatformVersion"},
+    {"id": "human_review", "level": "L6", "output": "Review", "gate": true},
+    {"id": "external_production", "level": "L6", "output": "ProductionTask", "routes": ["即梦路线", "纯代码路线"]},
+    {"id": "asset_registration", "level": "L6", "output": "Asset", "storage_modes": ["external", "local"]},
+    {"id": "delivery_acceptance", "level": "L6", "output": "Delivery", "gate": true},
+    {"id": "manual_publish", "level": "L6", "output": "Publication"},
+    {"id": "publish_feedback", "level": "L7", "output": "MetricSnapshot"},
+    {"id": "insight_return", "level": "L7", "output": "Insight"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "royal-zen-social-agent-workbench",
+  "version": "1.4.2-phase5",
+  "private": true,
+  "description": "社媒 Agent 工作台五期 MVP 完整度补齐版",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

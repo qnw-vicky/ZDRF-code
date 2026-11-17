@@ -1,0 +1,36 @@
+{
+  "version": "1.4.2-phase5",
+  "operator_trace": {
+    "known_participant_required_for_mutations": true,
+    "role_hierarchy_defined": false,
+    "audit_required_for_mutations": true
+  },
+  "action_task_deletion": {
+    "mode": "soft_delete",
+    "confirmation_required": true,
+    "production_and_publication_deletion_supported": false
+  },
+  "human_gates": {
+    "review_required_before_production": true,
+    "acceptance_required_before_publish": true
+  },
+  "execution_boundary": {
+    "workbench_dispatches_external_production": true,
+    "workbench_generates_images": false,
+    "workbench_renders_video": false,
+    "workbench_auto_publishes": false
+  },
+  "asset_storage": {
+    "modes": ["external", "local"],
+    "selection": "one_per_asset",
+    "max_local_file_bytes": 524288000,
+    "deletion_supported": false
+  },
+  "evidence_policy": {
+    "published_records_are_immutable_by_agents": true,
+    "insight_requires_content_links": true,
+    "insight_requires_source_sample_baseline_numbers": true,
+    "operating_data_may_tune_mix_but_not_replace_strategy": true,
+    "t7_is_primary_comparison_snapshot": true
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "version": "1.4.2-phase5",
+    "updatedAt": "2026-11-16T00:00:00.000Z"
+  },
+  "idea": {
+    "topic": "安特卫普家庭如何量尺并安装窗帘",
+    "source": "AI 情报雷达 · 近期社媒案例",
+    "problem": "窗户尺寸不标准，买现成窗帘容易遮光不完整。",
+    "value": "量尺过程、安装细节、室内搭配前后对比。",
+    "targetPlatforms": "Facebook / Instagram、Pinterest、小红书、YouTube",
+    "validationVariable": "量尺知识内容的 T+7 互动率是否高于当前内容中位数",
+    "card": "一扇窗的 3 个测量点，决定窗帘能不能装得平整",
+    "status": "演示数据"
+  },
+  "participants": [
+    {"id":"USR-OPS","name":"社媒运营负责人","active":true},
+    {"id":"USR-BIZ","name":"业务负责人","active":true}
+  ],
+  "auditLog": [],
+  "reviews": [],
+  "platformVersions": [],
+  "accounts": [
+    {"id":"ACC-META","platform":"Facebook / Instagram","accountName":"Meta 内容线","region":"比利时","status":"已连接","owner":"王子進","capability":"可发布视频 / 图文","notes":"现有账号","lastCheckedAt":"2026-11-16T00:00:00.000Z"},
+    {"id":"ACC-PINTEREST","platform":"Pinterest","accountName":"Royal Zen Living","region":"比利时","status":"待完善","owner":"王子進","capability":"首批内容 0 / 6","notes":"已注册，待完善头像、简介和首批内容","lastCheckedAt":"2026-11-16T00:00:00.000Z"},
+    {"id":"ACC-YOUTUBE","platform":"YouTube","accountName":"待创建","region":"比利时","status":"待注册","owner":"王子進","capability":"2–3 分钟长视频","notes":"使用比利时电脑注册 Google 邮箱","lastCheckedAt":"2026-11-16T00:00:00.000Z"},
+    {"id":"ACC-TIKTOK","platform":"TikTok","accountName":"待验证","region":"比利时","status":"待验证","owner":"王子進","capability":"短视频流量线","notes":"需要手机登录并扫码验证","lastCheckedAt":"2026-11-16T00:00:00.000Z"}
+  ],
+  "actionTasks": [
+    {"id":"AT-001","sortOrder":0,"title":"Pinterest 启动工作","description":"补齐头像、简介、首批 6 条图文","owner":"王子進","dueDate":"2026-11-18","priority":"高","status":"进行中","createdAt":"2026-11-16T00:00:00.000Z","updatedAt":"2026-11-16T00:00:00.000Z"},
+    {"id":"AT-002","sortOrder":1,"title":"YouTube 比利时账号","description":"用比利时电脑注册 Google 邮箱并建立频道","owner":"王子進","dueDate":"2026-11-20","priority":"高","status":"待处理","createdAt":"2026-11-16T00:00:00.000Z","updatedAt":"2026-11-16T00:00:00.000Z"},
+    {"id":"AT-003","sortOrder":2,"title":"TikTok 登录验证","description":"手机登录 TikTok 后扫码完成验证","owner":"王子進","dueDate":"2026-11-21","priority":"中","status":"需要人工","createdAt":"2026-11-16T00:00:00.000Z","updatedAt":"2026-11-16T00:00:00.000Z"}
+  ],
+  "productionTasks": [
+    {
+      "id": "PT-DEMO-001",
+      "contentId": "RZ-001",
+      "title": "量尺安装真实案例",
+      "reviewVersion": "v1.0",
+      "route": "即梦路线",
+      "owner": "王子進",
+      "ratio": "9:16",
+      "dueDate": "2026-11-18",
+      "checklist": "成片、封面、字幕、文案",
+      "status": "已验收",
+      "createdAt": "2026-11-02T00:00:00.000Z"
+    }
+  ],
+  "assets": [],
+  "deliveries": [],
+  "publicationRecords": [
+    {"id":"PUB-SEED-001","contentId":"RZ-001","platform":"Facebook","plannedOrActualDate":"2026-11-02","status":"已发布","platformUrl":"https://facebook.example/RZ-001","blocker":"","recordedAt":"2026-11-02T20:00:00.000Z"},
+    {"id":"PUB-SEED-002","contentId":"RZ-002","platform":"Instagram","plannedOrActualDate":"2026-11-03","status":"已发布","platformUrl":"https://instagram.example/RZ-002","blocker":"","recordedAt":"2026-11-03T20:00:00.000Z"}
+  ],
+  "metricSnapshots": [
+    {"id":"MET-SEED-001","contentId":"RZ-001","platform":"Facebook","snapshot":"T+7","sourceName":"Meta 后台导出","sourceDate":"2026-11-09","impressions":12400,"views":7800,"watchRate":42,"engagements":420,"clicks":96,"importedAt":"2026-11-09T09:00:00.000Z"},
+    {"id":"MET-SEED-002","contentId":"RZ-002","platform":"Instagram","snapshot":"T+7","sourceName":"Meta 后台导出","sourceDate":"2026-11-10","impressions":9800,"views":6100,"watchRate":39,"engagements":360,"clicks":81,"importedAt":"2026-11-10T09:00:00.000Z"}
+  ],
+  "importBatches": [
+    {"id":"IMP-SEED-001","sourceName":"Meta 后台导出","sourceDate":"2026-11-10","rowCount":2,"matched":2,"importedAt":"2026-11-10T09:00:00.000Z"}
+  ],
+  "insights": [],
+  "adoptedInsight": null,
+  "contentLedger": [
+    {"id":"RZ-001","platform":"Facebook","title":"量尺安装真实案例","dateLabel":"11 月 2 日","dateValue":"2026-11-02","status":"已发布","snapshot":"T+7","format":"短视频","ratio":"9:16","category":"真实案例","style":"实用型","copyStatus":"文案已完成","assetStatus":"素材已验收","isVideo":true,"metrics":{"impressions":12400,"views":7800,"watchRate":42,"engagements":420,"clicks":96}},
+    {"id":"RZ-002","platform":"Instagram","title":"室内搭配前后对比","dateLabel":"11 月 3 日","dateValue":"2026-11-03","status":"已发布","snapshot":"T+7","format":"短视频","ratio":"9:16","category":"室内搭配","style":"场景型","copyStatus":"文案已完成","assetStatus":"素材已验收","isVideo":true,"metrics":{"impressions":9800,"views":6100,"watchRate":39,"engagements":360,"clicks":81}},
+    {"id":"RZ-003","platform":"YouTube","title":"如何判断窗帘遮光等级","dateLabel":"11 月 15 日","dateValue":"2026-11-15","status":"卡在账号","format":"长视频","ratio":"16:9","category":"知识分享","style":"技术型","copyStatus":"脚本已完成","assetStatus":"代码动画制作中","isVideo":true,"metrics":{"impressions":0,"views":0,"watchRate":0,"engagements":0,"clicks":0}},
+    {"id":"RZ-004","platform":"小红书","title":"安特卫普客厅配色记录","dateLabel":"11 月 13 日","dateValue":"2026-11-13","status":"待确认","format":"短视频","ratio":"9:16 / 封面 3:4","category":"室内搭配","style":"生活方式","copyStatus":"标题待确认","assetStatus":"封面已完成","isVideo":true,"metrics":{"impressions":0,"views":0,"watchRate":0,"engagements":0,"clicks":0}},
+    {"id":"RZ-005","platform":"Pinterest","title":"一扇窗的三个测量点","dateLabel":"11 月 13 日","dateValue":"2026-11-13","status":"待确认","format":"Idea Pin","ratio":"2:3","category":"量尺知识","style":"清单型","copyStatus":"文案已完成","assetStatus":"图卡已完成","isVideo":true,"metrics":{"impressions":0,"views":0,"watchRate":0,"engagements":0,"clicks":0}},
+    {"id":"RZ-006","platform":"Facebook","title":"AI 窗帘体验工具演示","dateLabel":"待安排","status":"草稿","format":"短视频","ratio":"9:16","category":"工具教程","style":"功能型","copyStatus":"待改写","assetStatus":"首帧已完成","isVideo":true,"metrics":{"impressions":0,"views":0,"watchRate":0,"engagements":0,"clicks":0}},
+    {"id":"RZ-007","platform":"Instagram","title":"面料近景与光线变化","dateLabel":"待安排","status":"草稿","format":"图文","ratio":"4:5","category":"产品细节","style":"视觉型","copyStatus":"文案已完成","assetStatus":"图片已验收","isVideo":false,"metrics":{"impressions":0,"views":0,"watchRate":0,"engagements":0,"clicks":0}},
+    {"id":"RZ-008","platform":"小红书","title":"窗帘测量清单保存版","dateLabel":"待安排","status":"草稿","format":"图文","ratio":"封面 3:4","category":"量尺知识","style":"清单型","copyStatus":"标题已完成","assetStatus":"图卡制作中","isVideo":false,"metrics":{"impressions":0,"views":0,"watchRate":0,"engagements":0,"clicks":0}}
+  ]
+}
